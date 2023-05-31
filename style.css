@@ -102,40 +102,58 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: background-color 100ms ease;
 }
 
 .nav-button:hover {
     /* background-color: var(--hover); */
-    background-color: #222;
+    /* background-color: #222; */
 }
 
 .nav-button i {
     color: #eee;
     font-size: 2.5rem;
+    transition: color 100ms ease, transform 100ms ease;
 }
+
+
 
 .nav-button:hover i {
     /* color: #aaa; */
-    transform: scale(.9);
+    /* transform: scale(.9); */
 }
 
 #nav-drawers-container {
+    height: 100%;
     width: 100%;
-    height: 95%;
-    /* height: 10%; */
-    position: absolute;
-    /* background-color: red; */
+    position: fixed;
     display: flex;
-    align-items: flex-end;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
     z-index: -1;
+    /* transform: translateY(-5rem); */
 }
 
-#nav-drawer-group {
-    width: 85%;
+#chicken {
+
+    width: 100%;
     height: 8rem;
     display: flex;
     justify-content: center;
+}
+
+#nav-drawer-group {
+    height: 100%;
+    width: 85%;
+    max-width: 70rem;
+    display: flex;
+    justify-content: center;
+
+    /* width: 85%;
+    height: 8rem;
+    display: flex;
+    justify-content: center; */
 }
 
 .nav-drawer {
@@ -143,14 +161,23 @@ nav {
     height: 8rem;
     background-color: #f008;
     border: 1px solid white;
+    transition: transform 50ms ease;
 }
 
-.nav-button-active {
+.button-active {
     background-color: var(--hover);
+    transition: background-color 100ms ease;
 }
 
-.pink {
-    background-color: pink;
+.button-active i {
+    color: black;
+    transform: translateY(-1.5rem) scale(1.5);
+    transition: transform 100ms ease;
+}
+
+.drawer-active {
+    transform: translateY(-100%);
+    transition: transform 100ms 100ms ease;
 }
 
 
