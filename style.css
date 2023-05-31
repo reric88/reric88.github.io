@@ -145,7 +145,13 @@ nav {
     border: 1px solid white;
 }
 
+.nav-button-active {
+    background-color: var(--hover);
+}
 
+.pink {
+    background-color: pink;
+}
 
 
 
