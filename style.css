@@ -1,0 +1,155 @@
+:root {
+    --primary: #EE963C;
+    --secondary: #e9a969;
+    --hover: #ff8000;
+    --bg-overlay: #EE963C99;
+    --accent: #1f1f1f;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+html {
+    /* height: 100%; */
+}
+
+body {
+    /* background-color: var(--primary); */
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+
+}
+
+/* #region Background and border */
+
+#bg-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding: 2rem;
+    position: fixed;
+    z-index: -99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: radial-gradient(var(--bg-overlay), var(--primary));
+    pointer-events: none;
+}
+
+#border {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border:  1rem solid black;
+    z-index: 99;
+}
+
+#border-round {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 0 1rem black;
+    border-radius: 1rem;
+    z-index: 99;
+
+}
+
+#bg-image img {
+    width: 100%;
+    transform: rotate(22.5deg);
+    opacity: .4;
+}
+
+/* #endregion */
+
+#nav-container {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+nav {
+    width: 100%;
+    height: 8rem;
+    display: flex;
+    justify-content: center;
+}
+
+#navbar {
+    height: 100%;
+    width: 85%;
+    max-width: 70rem;
+    background-color: black;
+    border-radius: 7rem 7rem 0 0;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.nav-button {
+    height: 100%;
+    width: 20%;
+    /* width: 10rem; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-button:hover {
+    /* background-color: var(--hover); */
+    background-color: #222;
+}
+
+.nav-button i {
+    color: #eee;
+    font-size: 2.5rem;
+}
+
+.nav-button:hover i {
+    /* color: #aaa; */
+    transform: scale(.9);
+}
+
+#nav-drawers-container {
+    width: 100%;
+    height: 95%;
+    /* height: 10%; */
+    position: absolute;
+    /* background-color: red; */
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    z-index: -1;
+}
+
+#nav-drawer-group {
+    width: 85%;
+    height: 8rem;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-drawer {
+    width: 20%;
+    height: 8rem;
+    background-color: #f008;
+    border: 1px solid white;
+}
+
+
+
+
+
+
+
+
+
