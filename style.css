@@ -1,3 +1,31 @@
+@font-face {
+    font-family: newRodin;
+    src: url(./Typeface/NewRodin\ Pro\ L.otf);
+}
+
+@font-face {
+    font-family: newRodinB;
+    src: url(./Typeface/NewRodin\ Pro\ B.otf);
+}
+
+@font-face {
+    font-family: newRodinUB;
+    src: url(./Typeface/NewRodin\ Pro\ UB.otf);
+}
+
+@font-face {
+    font-family: newRodinEB;
+    src: url(./Typeface/NewRodin\ Pro\ EB.otf);
+}
+@font-face {
+    font-family: newRodinDB;
+    src: url(./Typeface/NewRodin\ Pro\ DB.otf);
+}
+@font-face {
+    font-family: newRodinM;
+    src: url(./Typeface/NewRodin\ Pro\ M.otf);
+}
+
 :root {
     --primary: #EE963C;
     --secondary: #e9a969;
@@ -19,11 +47,44 @@ html {
 
 body {
     /* background-color: var(--primary); */
+    font-family: 'newRodin', sans-serif;
     width: 100%;
     height: 100%;
     overflow-x: hidden;
 
 }
+
+h1 {
+    font-size: 6rem;  
+  }
+  
+  h2 {
+      font-size: 5rem;  
+      
+  }
+  
+  h3 {
+      font-size: 4rem;  
+      
+  }
+  
+  h4 {
+      font-size: 3rem;  
+      
+  }
+  
+  h5 {
+      font-size: 2.5rem;  
+  
+  }
+  
+  h6 {
+      font-size: 2rem;
+  }
+  
+  p {
+      font-size: 1.8rem;
+  }
 
 /* #region Background and border */
 
@@ -67,14 +128,87 @@ body {
 
 /* #endregion */
 
-#nav-container {
-    height: 100%;
+/* #region Background Text */
+
+#bg-text {
     width: 100%;
+    height: 100%;
+    position: fixed;
+    pointer-events: none;
+    line-height: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid red;
+}
+
+.hollow {
+    font-family: 'newRodinUB';
+    color: transparent;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 2px;
+}
+
+.solid {
+    font-family: 'newRodinUB';
+}
+
+.sets {
+    margin: .25rem 0;
+}
+
+.sets h1 {
+    display: inline;
+}
+
+/* #set1 {
+    margin-right: -15%;
+}
+
+#set2 {
+    margin-left: -10%;
+}
+
+#set3 {
+    margin-right: -20%;
+} */
+
+@media (width < 650px) {
+    .hollow {
+        font-size: 4rem;
+    }
+    
+    .solid {
+        font-size: 4rem;
+
+    }
+}
+
+/* @media (width < 650px) {
+    .hollow {
+        font-size: 4rem;
+    }
+    
+    .solid {
+        font-size: 4rem;
+        color: white;
+
+    }
+} */
+/* #endregion */
+
+#nav-container {
+    height: 8rem;
+    width: 100%;
+    bottom: 0;
     position: fixed;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
+    /* border: 1px solid red; */
+    z-index: 99;
 }
 
 nav {
@@ -102,6 +236,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
     transition: background-color 100ms ease;
 }
 
@@ -135,7 +270,7 @@ nav {
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
-    z-index: -1;
+    /* z-index: -1; */
     /* transform: translateY(-5rem); */
 }
 
@@ -163,8 +298,6 @@ nav {
 .nav-drawer {
     width: 20%;
     height: 8rem;
-    background-color: #f008;
-    border: 1px solid white;
     transition: transform 50ms ease;
 }
 
@@ -179,15 +312,63 @@ nav {
     transition: transform 100ms ease;
 }
 
+.button-active i:hover {
+    color: white;
+}
+
 .drawer-active {
     transform: translateY(-100%);
     transition: transform 100ms 100ms ease;
-
 }
 
+.drawer-content {
+    width: 300%;
+    height: 100%;
+    background-color: var(--hover);
+    border-radius: 3rem 3rem 0 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow: hidden;
+    font-size: 5rem;
+}
 
+.drawer-content a {
+    font-family: 'newRodinUB';
+    height: 100%;
+    font-size: 1.5rem;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    line-height: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.drawer-content a:hover {
+    color: white;
+}
 
+#about-content a {
+    width: 40%;
+}
+
+#home-content {
+    transform: translateX(-33%);
+}
+
+#home-content a {
+    width: 33%;
+}
+
+#project-content {
+    transform: translateX(-66.5%);
+}
+
+#project-content a {
+    width: 40%;
+}
 
 
 
