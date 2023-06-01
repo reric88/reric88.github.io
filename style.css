@@ -118,9 +118,13 @@ nav {
 
 
 
-.nav-button:hover i {
-    /* color: #aaa; */
-    /* transform: scale(.9); */
+.i-hover {
+    color: #aaa;
+    transform: scale(.9);
+}
+
+.button-hover {
+    background-color: #1f1f1f;
 }
 
 #nav-drawers-container {
@@ -178,6 +182,7 @@ nav {
 .drawer-active {
     transform: translateY(-100%);
     transition: transform 100ms 100ms ease;
+
 }
 
 
