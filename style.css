@@ -583,12 +583,18 @@ nav {
 
   .card-back hr {
     background-color: white;
-    margin: 1rem;
   }
 
   .card-front hr {
     background-color: black;
   }
+
+.card hr {
+    width: 66%;
+    height: 1px;
+    border: none;
+    margin: 1rem;
+}
 
   .card-back ul {
     font-size: 3rem;
@@ -625,20 +631,27 @@ nav {
     justify-content: center;
     margin: 0;
     line-height: 1.5;
+    height: 50%;
+    cursor:default;
 }
 
 .card-description h4 {
     font-family: 'newRodinUB', sans-serif;
     margin: 1rem;
+    position: absolute;
+    top: 50%;
 }
 
-.card hr {
-    width: 66%;
-    height: 1px;
-    border: none;
+.storehouse-desc h5 {
+    font-size: 1.9rem;
+    font-family: 'newRodinB', sans-serif;
+    margin-bottom: 1rem;
+    margin-top: -1rem;
 }
+
 .card-description p {
     margin: 1rem;
+    height: 30%;
 }
 
 #zonk-card {
