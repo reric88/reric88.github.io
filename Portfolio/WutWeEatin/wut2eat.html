@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="Spinning wheel to pick something to eat. NOT!!!">
+   <meta name="author" content="Eric Collard">
+    <link rel="stylesheet" href="styles.css">
+   <title>Wut we eatin'?</title>
+</head>
+<body>
+    <div id="wheel-shadow">
+    <div class="main-box" id="main-box">
+        <div class="box" id="box">
+            <div class="box1">
+                <span class="font span1"><h5>Cheesecake Factory</h5></span>
+                <span class="font span2"><h5>Hardee's</h5></span>
+                <span class="font span3"><h5>Texas Rdhouse</h5></span>
+                <span class="font span4"><h5>Cheddar's</h5></span>
+                <span class="font span5"><h5>Chic-Fil-A</h5></span>
+            </div>
+            <div class="box2">
+                <span class="font span1"><h5>Tell me where</h5></span>
+                <span class="font span2"><h5>you want to go?</h5></span>
+                <span class="font span3"><h5>McDonald's</h5></span>
+                <span class="font span4"><h5>Sbarro's</h5></span>
+                <span class="font span5"><h5>Jimmy John's</h5></span>
+            </div>
+        </div>
+        <button class="spin" onclick="spin()"><p>Let's go to...</p></button>
+    </div>
+</div>
+    <audio 
+    controls="controls"
+    id="aww"    
+    src="./Sound/aww.mp3"
+    type="audion/mp3"></audio>
+    <audio 
+    controls="controls"
+    id="wheels"    
+    src="./Sound/wheel3.mp3"
+    type="audion/mp3"></audio>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>

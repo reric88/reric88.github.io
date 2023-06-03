@@ -1,0 +1,128 @@
+/* Font not currently working */
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing:border-box; includes padding and a border when setting a width or a height */
+    box-sizing: border-box;
+}
+/* This is a variable */
+:root {
+    --white: #fff;
+    --gray: #4b5163;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    line-height: 1.5;
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 1;
+    margin-bottom: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--gray);
+}
+
+#main {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0 20px;
+}
+
+#video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(./Media/cover.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+ 
+}
+
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    /* width: 100%; */
+
+    /* The object-fit property determines how a video or image is resized to fit inside its conainer. Setting the value to "cover" allows the video to retain its aspect ratio and fill the given dimensions */
+    object-fit: cover;
+
+
+
+}
+
+#cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .7);
+
+}
+
+#content {
+    color: var(--white);
+    z-index: 2;
+    text-align: center;
+}
+
+#click {
+    /* Allows you to set top and bottom margin as well as width and height. This is not the case for inline */
+    display: inline-block;
+    margin-top: 25px;
+    border: 2px solid var(--white);
+    padding: 10px 30px;
+    background-color: var(--gray);
+    /* a elements will not inherit text color like other elements will. Must apply it directly */
+    color: var(--white);
+    border-radius: 10px;
+    font-size: 20px;
+    opacity: .8;
+
+}
+
+#click:hover {
+    transform: scale(.95);
+}
+
+#about {
+    padding: 50px;
+    text-align: center;
+}
+
+#about p {
+    font-size: 20px;
+    max-width: 500px;
+    margin: auto;
+}
+
+#about h2 {
+    margin: 40px 0;
+    color: var(--gray);
+}
+
+i {
+    font-size: 48px;
+    margin: 0 10px;
+}
+
+
+

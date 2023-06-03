@@ -1,0 +1,262 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  
+}
+
+
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  background: url(images/food.png);
+  background-size: cover;
+  background-position: center;
+}
+
+#wheel-shadow {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-image: radial-gradient(200px 200px at 50% 50%, #000, rgba(0,0,0,.1)),
+    radial-gradient(300px 300px at 50% 50%, #000, rgba(0,0,0,.15)),
+    radial-gradient(400px 400px at 50% 50%, #000, rgba(0,0,0,.2)),
+    radial-gradient(400px 400px at 50% 50%, #000, rgba(0,0,0,.25)),
+    radial-gradient(400px 400px at 50% 50%, #000, rgba(0,0,0,.3));
+}
+
+.main-box {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  margin-top: 50px;
+}
+
+.main-box:after {
+  position: absolute;
+  content: "";
+  width: 25%;
+  height: 25%;
+  background: url(Images/arrow.png) no-repeat;
+  background-size: 100%;
+  left: 98%;
+  top: 38%;
+  transform: rotate(45deg);
+  /* border: 10px solid black; */
+}
+
+.box {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  border-radius: 50%;
+  border: 10px solid whitesmoke;
+  overflow: hidden;
+  transition: all ease-in-out 700ms;
+  transform: rotate(90deg);
+}
+
+span {
+    width: 100%;
+    height: 100%;
+  display: inline-block;
+  position: absolute;
+}
+
+.span1 {
+    clip-path: polygon(0 17%, 0 50%, 50% 50%);
+    background-color: green;
+    box-shadow:inset 10px 80px 90px 30px #000000;
+
+}
+.box1 .span2 {
+    clip-path: polygon(0 17%, 30% 0, 50% 50%);
+    background-color: rgb(185, 69, 69);
+    box-shadow:inset 50px 50px 90px 30px #000000;
+
+}
+.span3 {
+    clip-path: polygon(71% 0, 100% 18%, 50% 50%);
+    background-color: rgb(92, 92, 179);
+    box-shadow:inset -50px 50px 90px 30px #000000;
+
+}
+.span4 {
+    clip-path: polygon(30% 0, 71% 0, 50% 50%);
+    background-color: rgb(133, 78, 145);
+    box-shadow:inset -0 20px 90px 30px #000000;
+
+}
+.span5 {
+    clip-path: polygon(100% 18%, 100% 50%, 50% 50%);
+    background-color: orange;
+    box-shadow:inset -10px 80px 90px 30px #000000;
+
+}
+
+.box2 .span3{ 
+    background-color: lightgreen;
+}
+.box2 {
+    width: 100%;
+    height: 100%;
+    transform: rotate(180deg);
+}
+
+.box2 .span1 {
+    clip-path: path('M 0 244 L 0,00 A 50,50 0,0,1 250,75 L 250 244 z');
+    background-color: rgb(126, 126, 126);
+    box-shadow:inset 50px 50px 90px 30px #000000;
+}
+
+.font {
+    color: white;
+    font-size: 28px;
+}
+
+.box1 .span1 h5 {
+    position: absolute;
+    top: 35%;
+    right: 63%;
+    transform: rotate(196deg);
+    text-align: center;
+
+}
+
+.box1 .span2 h5 {
+    position: absolute;
+    top: 27%;
+    right: 57%;
+    transform: rotate(-130deg);
+    text-align: center;
+
+}
+.box1 .span3 h5 {
+    position: absolute;
+    top: 24%;
+    right: 13%;
+    transform: rotate(-50deg);
+    text-align: center;
+
+}
+.box1 .span4 h5 {
+    position: absolute;
+    top: 20%;
+    right: 38%;
+    transform: rotate(-90deg);
+    text-align: center;
+
+}
+.box1 .span5 h5 {
+    position: absolute;
+    top: 40%;
+    right: 13%;
+    transform: rotate(-15deg);
+    text-align: center;
+
+}
+
+.box2 .span1 h5 {
+    position: absolute;
+    top: 35%;
+    right: 61%;
+    transform: rotate(210deg);
+    text-align: center;
+
+}
+.box2 .span2 h5 {
+    position: absolute;
+    top: 27%;
+    right: 55%;
+    transform: rotate(-140deg);
+    text-align: center;
+
+}
+.box2 .span3 h5 {
+    position: absolute;
+    top: 25%;
+    right: 18%;
+    transform: rotate(-50deg);
+    text-align: center;
+
+}
+.box2 .span4 h5 {
+    position: absolute;
+    top: 25%;
+    right: 40%;
+    transform: rotate(-90deg);
+    text-align: center;
+
+}
+.box2 .span5 h5 {
+    position: absolute;
+    top: 39%;
+    right: 5%;
+    transform: rotate(-15deg);
+    text-align: center;
+
+}
+
+.spin {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 4px solid white;
+    background-color: lightblue;
+    color: white;
+    box-shadow: 0 5px 20px black;
+    cursor: pointer;
+    z-index: 10;
+    box-shadow:inset 0 0 20px 5px #000000;
+}
+
+.spin p {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    text-shadow: 1px 1px black, -1px 1px black, 1px -1px black, -1px -1px black, 2px 2px black, -2px 2px black, 2px -2px black, -2px -2px black;
+}
+
+.spin p:active {
+    font-size: 18px;
+}
+
+.spin:active {
+    width: 80px;
+    height: 80px;
+    font-size: 18px;
+
+}
+
+/* .pause {
+    animation-play-state: paused;
+} */
+
+@keyframes animateArrowFast {
+    50% {
+        transform: rotate(35deg);
+    }
+}
+
+
+
+.animate {
+    animation: animateArrow 150ms ease-in-out infinite;
+}
+audio {
+    display: none;
+}
+

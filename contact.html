@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Contact" />
+    <meta name="author" content="Eric Collard" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/9fbf6c4d27.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"
+    ></script>
+    <title>Contact</title>
+  </head>
+  <body>
+    <!-- #region Background and border -->
+    <section id="bg-image">
+      <img
+        src="./Images/Pastel_Neurodiversity_Symbol.png"
+        alt="Multi-Colored Neurodiversity Symbol"
+      />
+    </section>
+    <section id="window-border">
+      <div id="border"><div id="border-round"></div></div>
+    </section>
+    <div id="overflow-y-protection-top"></div>
+    <div id="overflow-y-protection-bottom"></div>
+    <!-- <div id="url-compensator-bg"></div> -->
+
+    <!-- #endregion -->
+
+    <!-- #region Navbar -->
+    <section id="nav-container">
+      <nav>
+        <div id="navbar">
+          <div id="about-button" class="nav-button" name="about">
+            <i class="fa-solid fa-question"></i>
+          </div>
+          <div id="home-button" class="nav-button" name="home">
+            <i class="fa-solid fa-home"></i>
+          </div>
+          <div id="projects-button" class="nav-button" name="projects">
+            <i class="fa-solid fa-folder"></i>
+          </div>
+        </div>
+      </nav>
+    </section>
+
+    <!-- #endregion -->
+
+    <!-- #region Navbar Contents -->
+
+    <section id="nav-drawers-container">
+      <div id="chicken">
+        <div id="nav-drawer-group">
+          <div id="about-drawer" class="nav-drawer" name="about">
+            <div id="about-content" class="drawer-content">
+              <a href="about.html">About</a>
+              <a href="contact.html">Contact</a>
+            </div>
+          </div>
+
+          <div id="home-drawer" class="nav-drawer" name="home">
+            <div id="home-content" class="drawer-content">
+              <a href="#">Contact</a>
+              <a href="index.html">Home</a>
+
+              <a href="#">Social</a>
+            </div>
+          </div>
+
+          <div id="project-drawer" class="nav-drawer" name="projects">
+            <div id="project-content" class="drawer-content">
+              <a href="https://www.github.com/reric88">Github</a>
+              <a href="#">Portfolio</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- #endregion -->
+
+    <div id="contact-div">
+    <form id="contact-form" action="https://formsubmit.co/31842327ff21aa1ca53525777b942762" method="POST">
+        <div class="label-container">
+          <label for="first-name">
+            <input
+              type="text"
+              name="first-name"
+              class="contact-info contact-input"
+              id="first-name"
+              placeholder="First Name"
+              required
+            />
+          </label>
+        </div>
+
+        <div class="label-container">
+          <label for="last-name">
+            <input
+              type="text"
+              name="last-name"
+              class="contact-info contact-input"
+              id="last-name"
+              placeholder="Last Name"
+              required
+            />
+          </label>
+        </div>
+        <div class="label-container">
+          <label for="email">
+            <input
+              type="email"
+              name="email"
+              class="contact-info contact-input"
+              id="email"
+              placeholder="Email"
+              required
+            />
+          </label>
+        </div>
+
+        <div class="label-container">
+          <label for="organization">
+            <input
+              type="text"
+              name="organization"
+              class="contact-info contact-input"
+              id="organization"
+              placeholder="Organization"
+            />
+          </label>
+        </div>
+
+        <div id="text-container">
+          <textarea
+            name="comments"
+            class="contact-input"
+            id="comments"
+            cols="14"
+            rows="5"
+            placeholder="Type your comments here."
+          ></textarea>
+        </div>
+        <button id="submit-btn">Submit!</button>
+      </form>
+    </div>
+
+    
+
+    <script src="script.js"></script>
+  </body>
+</html>
