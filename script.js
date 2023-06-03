@@ -8,7 +8,6 @@ const projectDrawer = document.querySelector("#project-drawer");
 const navDrawers = document.querySelectorAll(".nav-drawer");
 
 navButtons.forEach((button, index) => {
-
   button.addEventListener("click", () => {
     const matchingDrawer = navDrawers[index];
     if (button.classList.contains("button-active")) {
@@ -21,21 +20,14 @@ navButtons.forEach((button, index) => {
       matchingDrawer.classList.add("drawer-active");
     }
   });
-
-  button.addEventListener('mouseover',()=>{
-    if (!button.classList.contains('button-active')){
-        button.classList.add('button-hover')
-        button.firstChild.classList.add('i-hover')
+  button.addEventListener("mouseover", () => {
+    if (!button.classList.contains("button-active")) {
+      button.classList.add("button-hover");
     } else {
-        button.classList.remove('button-hover')
-        button.firstChild.classList.remove('i-hover')
+      button.classList.remove("button-hover");
     }
   });
-
-  button.addEventListener('mouseleave',()=>{
-        button.classList.remove('button-hover')
-        button.firstChild.classList.remove('i-hover')
+  button.addEventListener("mouseleave", () => {
+    button.classList.remove("button-hover");
   });
-
-
 });
