@@ -693,7 +693,8 @@ nav {
     align-items: center;
     /* background-color: #ff800088; */
     background-color: var(--primary) ;
-    height: fit-content;
+    height: 80%;
+    margin-bottom: 6rem;
     width: fit-content;
     padding: 2rem;
     border-radius: 1rem;
@@ -712,20 +713,20 @@ nav {
 
 .label-container {
     /* background-color: #f005; */
-    width: 50rem;
+    width: 40rem;
     height: 7rem;
     display: flex;
     align-items: center
 }
 
 .contact-info {
-    width: 50rem;
+    width: 40rem;
     height: 4rem;
 }
 
 #text-container textarea {
     margin-top: 1rem;
-    width: 50rem;
+    width: 40rem;
 }
 
 #submit-btn {
