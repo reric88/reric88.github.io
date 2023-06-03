@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Imbue:wght@100;200;300;400;500;600;700;800;900&family=Noto+Serif+Display:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    font-size: 62.5%;
+}
+
+* {
+    --primary-text: #081611;
+    --secondary-text: #ffefef;
+    --background: #e1f4ed;
+    --primary: #30727e;
+    --secondary: #f4f6fb;
+    --accent: #304b7e;
+    --poppins: 'Poppins', sans-serif;
+    --noto: 'Noto Serif Display', serif;
+    --imbue: 'Imbue', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--poppins);
+}
+
+h1 {
+  font-size: 6rem;  
+}
+
+h2 {
+    font-size: 5rem;  
+    
+}
+
+h3 {
+    font-size: 4rem;  
+    
+}
+
+h4 {
+    font-size: 3rem;  
+    
+}
+
+h5 {
+    font-size: 2.5rem;  
+
+}
+
+h6 {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1.8rem;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-text);
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--background);
+    overflow-x: hidden;
+}
+
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo-header {
+    margin-top: 1rem;
+    width: 12rem;
+    height: 6rem;
+    background-image: url('./Images/exit_logo.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#exit-header {
+    width: max-content;
+}
+
+#exit-header h5 {
+    font-weight: 400;
+    width: 100%;
+    letter-spacing: .5rem;
+    margin-top: -1rem;
+}
+
+#sheila-header h5 {
+    font-weight: 300;
+}
+
+#vertical-line {
+    height: 5rem;
+    width: .2rem;
+    background-color: black;
+    margin: 0 1rem;
+}
+
+#section-one {
+    width: 100%;
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+#office-image {
+    width: 85%;
+    height: 25rem;
+    background-image: url('./Images/petr-magera-LYDP_iYgbW4-unsplash.jpg');
+    background-position: center;
+    background-size: cover;
+    box-shadow: .4rem .4rem 1rem 0 #111a;
+}
+
+#section-two {
+    display: flex;
+    justify-content: center;
+}
+
+#sheila-image {
+    margin-top: -7rem;
+    /* margin-bottom: -7rem; */
+    width: 20rem;
+    height: 20rem;
+    border-radius: 10rem;
+    background-image: url('./Images/sheila.jpg');
+    background-size: cover;
+    box-shadow: .4rem .4rem 1rem 0 #111a;
+
+}
+
+.break {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.horizontal-line {
+    height: .2rem;
+    width: 66%;
+    background-color: #111;
+}
+
+#section-three {
+    width: 100%;
+    padding: 0 3rem;
+}
+
+#section-three p {
+    text-align: justify;
+}
+
+footer {
+    width: 100%;
+    height: fit-content;
+    background-color: var(--primary);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 .5rem 1rem 0 #111a;
+}
+
+.footer-item {
+    width: 40rem;
+    height: fit-content;
+    padding: 1rem;
+    margin: 1rem;
+    background-color: var(--background);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 1rem;
+    box-shadow: .4rem .4rem 1rem 0 #111a;
+}
+
+#phone {
+    margin-top: 2rem;
+}
+
+footer i {
+    font-size: 4rem;
+    display: block;
+    color: var(--accent);
+    /* border: 2px solid var(--background); */
+    padding: .5rem;
+    border-radius: 1rem;
+    /* background-color: var(--accent); */
+}
+
+.fa-location-dot {
+    /* width: 5rem; */
+    padding: .5rem 1.2rem;
+}
+
+footer a {
+    font-size: 2rem;
+    display: block;
+    text-decoration: none;
+    color: var(--accent);
+    margin: 0 auto;
+}
+
+#map {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: -32rem;
+    /* left: 0; */
+    border: 2px solid red;
+}
+
+.shown {
+    transform: scale(1);
+    
+}
+
+.hidden {
+    transform: scale(0);
+}
+
+#footer-logo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer-logo img {
+    margin-top: 2rem;
+}
+
+#credit {
+    margin-top: 1rem;
+    font-size: 2rem;
+}
+
+
+
