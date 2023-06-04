@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Index page for Eric Collard. This is a portfolio showcasing various web development and coding skills acquired. Skills include HTML, CSS, Bootstrap, JavaScript, and Python."
+    />
+    <meta name="author" content="Eric Collard" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/9fbf6c4d27.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"
+    ></script>
+    <title>Portfolio Index</title>
+  </head>
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-1LKG3VYN10"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-1LKG3VYN10");
+  </script>
+  <body>
+    <!-- #region Background and border -->
+    <section id="bg-image">
+      <img
+        src="./Images/Pastel_Neurodiversity_Symbol.png"
+        alt="Multi-Colored Neurodiversity Symbol"
+      />
+    </section>
+    <section id="window-border">
+      <div id="border"><div id="border-round"></div></div>
+    </section>
+    <div id="overflow-y-protection-top"></div>
+    <div id="overflow-y-protection-bottom"></div>
+    <!-- #endregion -->
+
+    <!-- #region Navbar -->
+    <section id="nav-container">
+      <nav>
+        <div id="navbar">
+          <div id="about-button" class="nav-button" name="about">
+            <i class="fa-solid fa-question"></i>
+          </div>
+          <div id="home-button" class="nav-button" name="home">
+            <i class="fa-solid fa-home"></i>
+          </div>
+          <div id="projects-button" class="nav-button" name="projects">
+            <i class="fa-solid fa-folder"></i>
+          </div>
+        </div>
+      </nav>
+    </section>
+
+    <!-- #endregion -->
+
+    <!-- #region Navbar Contents -->
+
+    <section id="nav-drawers-container">
+      <div id="chicken">
+        <div id="nav-drawer-group">
+          <div id="about-drawer" class="nav-drawer" name="about">
+            <div id="about-content" class="drawer-content">
+              <a href="about.html">About</a>
+              <a href="contact.html">Contact</a>
+            </div>
+          </div>
+
+          <div id="home-drawer" class="nav-drawer" name="home">
+            <div id="home-content" class="drawer-content">
+              <!-- <a href="#">Contact</a> -->
+              <a href="#">Home</a>
+
+              <!-- <a href="#">Social</a> -->
+            </div>
+          </div>
+
+          <div id="project-drawer" class="nav-drawer" name="projects">
+            <div id="project-content" class="drawer-content">
+              <a href="https://www.github.com/reric88" target="_blank"
+                >Github</a
+              >
+              <a href="portfolio.html">Portfolio</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- #endregion -->
+
+    <!-- #region Social Media -->
+
+    <section id="social-section">
+      <div id="social-div">
+        <a href="https://www.facebook.com/ruffyreborn" target="_blank"
+          ><i class="fa-brands fa-facebook"></i
+        ></a>
+        <a href="https://www.instagram.com/reric88" target="_blank"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+        <a href="https://www.youtube.com/@reric88" target="_blank"
+          ><i class="fa-brands fa-youtube"></i
+        ></a>
+        <a href="https://www.github.com/reric88" target="_blank"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/richard-collard-b86044a2/"
+          target="_blank"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+      </div>
+      <div id="about-div">
+        <h3>About</h3>
+        <p>
+          Welcome to my website portfolio! My name is Eric Collard, and I am
+          thrilled to have this opportunity to share my passion for markup, coding, and anything else with you.
+        </p>
+        <p>
+          I am a full-stack web and app developer with many years of experience in coding structures. Throughout my time learning, I have had the
+          privilege of working on many projects and collaborating with
+          talented individuals who have helped shape my skills and knowledge.
+        </p>
+        <p>
+          My journey in development began early in my life, but only recently have I decided to pursue a career using these skills. Since the beginning, I have been dedicated to expanding my skill set
+          and staying up-to-date with the latest industry trends and
+          technological advancements. I believe in the power of continuous
+          learning and strive to enhance my expertise through various courses,
+          workshops, bootcamps, and self-directed study.
+        </p>
+        <p>
+          My approach to development is often unconventional, driven by my creativity and the need to find solutions. I am passionate about finding new ways to complete my tasks. Whether
+          it's creating, styling and coding websites, games or applications, I am constantly motivated to deliver exceptional results and
+          exceed expectations.
+        </p>
+        <p>
+          In addition to my professional endeavors, I am an avid tinkerer, woodworker and gamer. These activities
+          not only bring me joy but also inspire creativity and fresh
+          perspectives in my work. I am also a father and husband, and I strongly believe that a well-rounded life
+          enriches both personal and professional experiences.
+        </p>
+        <p>
+          On this website, you will find a collection of my finest projects and
+          achievements, showcasing my expertise and the value I can bring to
+          your team or organization. I invite you to explore my portfolio and
+          get a glimpse of the projects I have created.
+        </p>
+        <p>
+          Thank you for visiting my portfolio, and I look forward to
+          connecting with you and discussing potential collaborations, ideas, or
+          opportunities. Feel free to reach out to me via the provided contact
+          information, and let's embark on a journey of innovation together.
+        </p>
+      </div>
+      <a href="#"> <button id="projects-bottom-button">Back to top</button></a>
+    </section>
+
+    <!-- #endregion -->
+
+    <script src="script.js"></script>
+  </body>
+</html>
