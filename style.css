@@ -119,16 +119,16 @@ h1 {
 
 ::-webkit-scrollbar-thumb {
     /* background-image: linear-gradient(to right, #050505, #151515); */
-    background-color: #ffffff0f;
+    background-color: #ffffff1f;
     /* border: 1px solid #111; */
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background-color: #ffffff18;
+    background-color: #ffffff28;
 }
 
 ::-webkit-scrollbar-thumb:active {
-    background-color: #ffffff1f;
+    background-color: #ffffff2f;
 
 }
 
