@@ -25,3 +25,6 @@
 [submodule "Portfolio/ReactToDo"]
 	path = Portfolio/ReactToDo
 	url = https://github.com/reric88/REACT-to-do-list.git
+[submodule "Portfolio/GCA"]
+	path = Portfolio/GCA
+	url = https://github.com/reric88/Capstone.git
