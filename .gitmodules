@@ -1,5 +1,5 @@
 [submodule "Portfolio/Storehouse"]
-	path = Portfolio/StorehouseSimple
+	path = Portfolio/Storehouse
 	url = https://github.com/reric88/StorehouseSimple.git
 [submodule "Portfolio/RealEstate"]
 	path = Portfolio/RealEstate
