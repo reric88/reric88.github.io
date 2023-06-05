@@ -4,3 +4,24 @@
 [submodule "Portfolio/RealEstate"]
 	path = Portfolio/RealEstate
 	url = https://github.com/reric88/SheilaWithExit.git
+[submodule "Portfolio/PhotoSite"]
+	path = Portfolio/PhotoSite
+	url = https://github.com/reric88/PhotoSite.git
+[submodule "Portfolio/VideoBG"]
+	path = Portfolio/VideoBG
+	url = https://github.com/reric88/VideoBackgroundProject.git
+[submodule "Portfolio/FullPage"]
+	path = Portfolio/FullPage
+	url = https://github.com/reric88/FullWebsiteProject.git
+[submodule "Portfolio/LePainS"]
+	path = Portfolio/LePainS
+	url = https://github.com/reric88/lepain.git
+[submodule "Portfolio/ImageSlider"]
+	path = Portfolio/ImageSlider
+	url = https://github.com/reric88/ImageSlider.git
+[submodule "Portfolio/TAGhostbuster"]
+	path = Portfolio/TAGhostbuster
+	url = https://github.com/reric88/TextAdventure.git
+[submodule "Portfolio/ReactToDo"]
+	path = Portfolio/ReactToDo
+	url = https://github.com/reric88/REACT-to-do-list.git
