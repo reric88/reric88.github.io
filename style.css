@@ -699,6 +699,10 @@ nav {
     background-image: url('./Images/bideoBackground.png');
 }
 
+#react-todo-card {
+    background-image: url('./Images/todolist.png');
+}
+
 #full-page-card {
     background-image: url('./Images/fullWebpageProject.png');
 }
