@@ -459,6 +459,29 @@ nav {
 }
 /* #endregion */
 
+/* #region Project Page */
+
+#instructions {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+#instructions p {
+    text-align: center;
+    background-color: var(--primary);
+    width: fit-content;
+    border-radius: 1rem;
+    padding: 2rem;
+    font-size: 2.5rem;
+    /* font-weight: 600; */
+
+}
+
+/* #endregion */
+
 /* #region Project Cards */
 
 #project-cards-container {
