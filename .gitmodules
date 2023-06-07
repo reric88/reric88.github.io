@@ -28,3 +28,6 @@
 [submodule "Portfolio/Storehouse"]
 	path = Portfolio/Storehouse
 	url = https://github.com/reric88/StorehouseSimple.git
+[submodule "MovieApp"]
+	path = MovieApp
+	url = https://github.com/reric88/MovieApp.git

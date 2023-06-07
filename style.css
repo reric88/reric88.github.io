@@ -739,7 +739,9 @@ nav {
     background-image: url('./Images/ghostbusters.png');
 }
 
-
+#movie-app-card {
+    background-image: url('./Images/movieApp.png');
+}
 
 
 
