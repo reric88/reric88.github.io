@@ -687,6 +687,10 @@ nav {
     height: 30%;
 }
 
+#pokedex-card {
+    background-image: url('./Images/pokedexApp.png');
+}
+
 #zonk-card {
     background-image: url('./Images/ZONK.png');
 }
